@@ -460,19 +460,7 @@ def start_Detection(request):
 
 #                     email.send(fail_silently=False)
 
-#                     # ================= SMS =================
-#                     try:
-#                         account_sid = "AC31546f4317a2633553e3e4bf1dbfe44e"
-#                         auth_token = "3729e9c4fc7db2e3f05fdc3eb8fac189"
-#                         twilio_number = "+12184195652"
-
-#                         client = Client(account_sid, auth_token)
-
-#                         phone_number = case.phone
-#                         if not phone_number.startswith("+"):
-#                             phone_number = "+" + phone_number
-
-#                         sms_message = f"""
+#                     
 # ALERT!
 
 # {case.name} has been {case.status}.
